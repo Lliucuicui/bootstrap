@@ -72,6 +72,9 @@
             text-align: center;
             margin-top: 340px;
         }
+        .p2{
+            width: 520px;
+        }
         #b0{
             display: inline-block;
             width: 120px;
@@ -92,6 +95,14 @@
             width: 100px;
             background-color: rgb(203,84,5);
             border: 1px solid rgb(203,84,5);
+        }
+        #box4{
+            background-image: url(img/banner.jpg); 
+            background-size: cover; 
+            height: 450px;
+            z-index:-10;
+            zoom: 1;
+            background-size: cover;
         }
     </style>
 </head>
@@ -137,15 +148,19 @@
             <button class="btn1">快速定制</button>
         </nav>
     </div>
-    <div class="container-fluid" style="background-image: url(img/banner.jpg); height: 450px;">
-        <p id="p1">
-            <span id="b0">
-                <img src="img/position.png">
-                <span>目的地</span>
-            </span>
-            <input type= "text" placeholder=" | 日本 美国 英国 地中海" id="inp">  
-            <button type= "submit" id="btn2"><img src="img/search.png"></button> 
-        </p>
+    <div class="container-fluid" id="box4">
+        <div class="row">
+            <div class="col-xs-10 col-xs-push-1 col-md-6 col-md-push-3" id="p1">
+                <p class="p2">
+                    <span id="b0">
+                        <img src="img/position.png">
+                        <span>目的地</span>
+                    </span>
+                    <input type= "text" placeholder=" | 日本 美国 英国 地中海" id="inp">  
+                    <button type= "submit" id="btn2"><img src="img/search.png"></button> 
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
